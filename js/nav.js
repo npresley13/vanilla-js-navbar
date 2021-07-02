@@ -27,9 +27,8 @@ const navs = [{
 ];
 
 // Loop that places list items to create the navBar. 
-const navBarMarkup = `
-${navs.map(nav => `<li class="navlink"><a href=${nav.Url} class="${nav.Class}" alt="${nav.Alt}">${nav.Text}</a>`).join(' ')}</li>
-`;
+const navBarMarkup = 
+navs.map(nav => `<li class="navlink"><a href=${nav.Url} class="${nav.Class}" alt="${nav.Alt}">${nav.Text}</a></li>`).join(' ');
 
 document.querySelector(' ul ').innerHTML = navBarMarkup;
 
